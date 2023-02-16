@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ECEB0558-98B4-41A4-919E-08543878EC6B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95423285-9E5D-4902-9C6A-B710078DC005"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "readCaloriesBurnedToday()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B83AEFF-5D21-455A-B527-A1A0AC39943F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "readCaloriesBurned(forToday:healthStore:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A192A26A-BB02-44BA-BB3E-9CE442571633"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "readCaloriesBurned(forToday:healthStore:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E46B3A05-246B-4048-8EA7-9D7636EF3100"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "readCaloriesBurned(forToday:healthStore:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5A791BF-84D1-4299-8D5C-818E93E396B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "readCaloriesBurned(forToday:healthStore:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C5A791BF-84D1-4299-8D5C-818E93E396B5 - 9d1334e4ec5eaf50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGymTracker.HealthKitManager.readCaloriesBurned(forToday: Foundation.Date, healthStore: __C.HKHealthStore, completion: (Swift.Optional&lt;Swift.Double&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhavsingh/Documents/MySideProjects/MyGymTracker/MyGymTracker/Helper/HealthKitManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C5A791BF-84D1-4299-8D5C-818E93E396B5 - 9d1334e4ec5eaf50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGymTracker.HealthKitManager.readCaloriesBurned(forToday: Foundation.Date, healthStore: __C.HKHealthStore, completion: (Swift.Optional&lt;Swift.Double&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhavsingh/Documents/MySideProjects/MyGymTracker/MyGymTracker/Helper/HealthKitManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "C5A791BF-84D1-4299-8D5C-818E93E396B5 - 9d1334e4ec5eaf50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGymTracker.HealthKitManager.readCaloriesBurned(forToday: Foundation.Date, healthStore: __C.HKHealthStore, completion: (Swift.Optional&lt;Swift.Double&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhavsingh/Documents/MySideProjects/MyGymTracker/MyGymTracker/Helper/HealthKitManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55AE73E6-E6E0-4C30-950E-4EB62A97937A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Helper/HealthKitManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "readCaloriesBurned(forToday:healthStore:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

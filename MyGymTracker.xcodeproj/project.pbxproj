@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22904D03299E184200B515F1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D02299E184200B515F1 /* HealthKitManager.swift */; };
+		22904D05299E198200B515F1 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D04299E198200B515F1 /* HealthKitViewModel.swift */; };
 		22F6C26D296C227D00073A6D /* MyGymTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C26C296C227D00073A6D /* MyGymTrackerApp.swift */; };
 		22F6C26F296C227D00073A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C26E296C227D00073A6D /* ContentView.swift */; };
 		22F6C271296C227F00073A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F6C270296C227F00073A6D /* Assets.xcassets */; };
 		22F6C274296C227F00073A6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F6C273296C227F00073A6D /* Preview Assets.xcassets */; };
+		22F6C27D296C22D800073A6D /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C27B296C22D800073A6D /* FoodModel.xcdatamodeld */; };
+		22F6C27F296C239D00073A6D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C27E296C239D00073A6D /* DataController.swift */; };
+		22F6C284296C27B900073A6D /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C283296C27B900073A6D /* AddFoodView.swift */; };
+		22F6C286296C2B4000073A6D /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C285296C2B4000073A6D /* TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22904D00299E174700B515F1 /* MyGymTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGymTracker.entitlements; sourceTree = "<group>"; };
+		22904D01299E17D700B515F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		22904D02299E184200B515F1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		22904D04299E198200B515F1 /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
 		22F6C269296C227D00073A6D /* MyGymTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGymTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F6C26C296C227D00073A6D /* MyGymTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGymTrackerApp.swift; sourceTree = "<group>"; };
 		22F6C26E296C227D00073A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22F6C270296C227F00073A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F6C273296C227F00073A6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22F6C27C296C22D800073A6D /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		22F6C27E296C239D00073A6D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		22F6C283296C27B900073A6D /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		22F6C285296C2B4000073A6D /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,13 @@
 		22F6C26B296C227D00073A6D /* MyGymTracker */ = {
 			isa = PBXGroup;
 			children = (
+				22904D01299E17D700B515F1 /* Info.plist */,
+				22904D00299E174700B515F1 /* MyGymTracker.entitlements */,
 				22F6C26C296C227D00073A6D /* MyGymTrackerApp.swift */,
-				22F6C26E296C227D00073A6D /* ContentView.swift */,
 				22F6C270296C227F00073A6D /* Assets.xcassets */,
+				22F6C282296C277D00073A6D /* Helper */,
+				22F6C281296C276E00073A6D /* Views */,
+				22F6C27A296C229E00073A6D /* DataModel */,
 				22F6C272296C227F00073A6D /* Preview Content */,
 			);
 			path = MyGymTracker;
@@ -65,6 +83,34 @@
 				22F6C273296C227F00073A6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22F6C27A296C229E00073A6D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				22F6C27B296C22D800073A6D /* FoodModel.xcdatamodeld */,
+				22F6C27E296C239D00073A6D /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		22F6C281296C276E00073A6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22F6C26E296C227D00073A6D /* ContentView.swift */,
+				22F6C283296C27B900073A6D /* AddFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22F6C282296C277D00073A6D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				22F6C285296C2B4000073A6D /* TimeFormatting.swift */,
+				22904D02299E184200B515F1 /* HealthKitManager.swift */,
+				22904D04299E198200B515F1 /* HealthKitViewModel.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F6C284296C27B900073A6D /* AddFoodView.swift in Sources */,
 				22F6C26F296C227D00073A6D /* ContentView.swift in Sources */,
+				22F6C27F296C239D00073A6D /* DataController.swift in Sources */,
 				22F6C26D296C227D00073A6D /* MyGymTrackerApp.swift in Sources */,
+				22F6C27D296C22D800073A6D /* FoodModel.xcdatamodeld in Sources */,
+				22904D05299E198200B515F1 /* HealthKitViewModel.swift in Sources */,
+				22904D03299E184200B515F1 /* HealthKitManager.swift in Sources */,
+				22F6C286296C2B4000073A6D /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +316,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyGymTracker/MyGymTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyGymTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5FRS52XTMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyGymTracker/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to write to your health data.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to access your health data. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +349,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyGymTracker/MyGymTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyGymTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 5FRS52XTMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyGymTracker/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to write to your health data.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to access your health data. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +399,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22F6C27B296C22D800073A6D /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22F6C27C296C22D800073A6D /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = 22F6C27C296C22D800073A6D /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 22F6C261296C227D00073A6D /* Project object */;
 }
