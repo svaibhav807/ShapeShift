@@ -10,12 +10,24 @@ import SwiftUI
 @main
 struct MyGymTrackerApp: App {
     @StateObject private var dataController = DataController()
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, dataController.container.viewContext)
-                .environmentObject(HealthKitViewModel())
+            TabView {
+                // First tab
+                ContentView()
+                    .tabItem {
+                        Label("Tracker", systemImage: "bolt")
+                    }
+
+                // Second tab
+                GymActivityView()
+                    .tabItem {
+                        Label("Map", systemImage: "map")
+                    }
+            }
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .environmentObject(HealthKitViewModel())
         }
     }
 }

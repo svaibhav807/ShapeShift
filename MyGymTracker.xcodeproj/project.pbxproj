@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220CE7B829C49908000BA8EE /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE7B729C49908000BA8EE /* StepsView.swift */; };
+		2263D54A29C4E06B00C8AB1F /* ArrowPolylineRendrer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263D54929C4E06B00C8AB1F /* ArrowPolylineRendrer.swift */; };
+		2275CD6B29C201D7000EA7A4 /* GymActivityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275CD6A29C201D7000EA7A4 /* GymActivityMapView.swift */; };
+		2275CD6D29C24D9C000EA7A4 /* GymActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275CD6C29C24D9C000EA7A4 /* GymActivityView.swift */; };
 		22904D03299E184200B515F1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D02299E184200B515F1 /* HealthKitManager.swift */; };
 		22904D05299E198200B515F1 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D04299E198200B515F1 /* HealthKitViewModel.swift */; };
 		22F6C26D296C227D00073A6D /* MyGymTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6C26C296C227D00073A6D /* MyGymTrackerApp.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220CE7B729C49908000BA8EE /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		2263D54929C4E06B00C8AB1F /* ArrowPolylineRendrer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowPolylineRendrer.swift; sourceTree = "<group>"; };
+		2275CD6A29C201D7000EA7A4 /* GymActivityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymActivityMapView.swift; sourceTree = "<group>"; };
+		2275CD6C29C24D9C000EA7A4 /* GymActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymActivityView.swift; sourceTree = "<group>"; };
 		22904D00299E174700B515F1 /* MyGymTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGymTracker.entitlements; sourceTree = "<group>"; };
 		22904D01299E17D700B515F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22904D02299E184200B515F1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 			children = (
 				22F6C27B296C22D800073A6D /* FoodModel.xcdatamodeld */,
 				22F6C27E296C239D00073A6D /* DataController.swift */,
+				2263D54929C4E06B00C8AB1F /* ArrowPolylineRendrer.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -98,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				22F6C26E296C227D00073A6D /* ContentView.swift */,
+				220CE7B729C49908000BA8EE /* StepsView.swift */,
+				2275CD6A29C201D7000EA7A4 /* GymActivityMapView.swift */,
+				2275CD6C29C24D9C000EA7A4 /* GymActivityView.swift */,
 				22F6C283296C27B900073A6D /* AddFoodView.swift */,
 			);
 			path = Views;
@@ -189,8 +201,12 @@
 				22F6C26D296C227D00073A6D /* MyGymTrackerApp.swift in Sources */,
 				22F6C27D296C22D800073A6D /* FoodModel.xcdatamodeld in Sources */,
 				22904D05299E198200B515F1 /* HealthKitViewModel.swift in Sources */,
+				2275CD6B29C201D7000EA7A4 /* GymActivityMapView.swift in Sources */,
 				22904D03299E184200B515F1 /* HealthKitManager.swift in Sources */,
+				220CE7B829C49908000BA8EE /* StepsView.swift in Sources */,
 				22F6C286296C2B4000073A6D /* TimeFormatting.swift in Sources */,
+				2263D54A29C4E06B00C8AB1F /* ArrowPolylineRendrer.swift in Sources */,
+				2275CD6D29C24D9C000EA7A4 /* GymActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

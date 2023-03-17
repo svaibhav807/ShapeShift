@@ -7,17 +7,26 @@
 
 import Foundation
 import HealthKit
+import MapKit
+import CoreLocation
 
-
-class HealthKitViewModel: ObservableObject {
+@MainActor class HealthKitViewModel: ObservableObject {
     private var healthStore = HKHealthStore()
     private var healthKitManager: HealthKitManager
-    @Published var userStepCount = ""
+    @Published var userStepCount = "0"
     @Published var userActiveCaloriesBurned = ""
     @Published var isAuthorized = false
+    @Published var workouts: [HKWorkout]?
+    @Published var workoutLocations: [HKWorkout: [CLLocation]] = [:]
+
+    
 
     init() {
         self.healthKitManager = HealthKitManager()
+    }
+
+    func location(workout: HKWorkout)  {
+
     }
 
     func healthRequest() {
@@ -48,6 +57,25 @@ class HealthKitViewModel: ObservableObject {
         }
     }
 
+    func readWorkouts() async {
+        let healthStore = HKHealthStore()
+        let workouts = await healthKitManager.readWorkouts(healthStore: healthStore)
+        DispatchQueue.main.async {
+            self.workouts = workouts
+        }
+        var workoutLocations: [HKWorkout: [CLLocation]] = [:]
+        if let workouts = workouts {
+            for workout in workouts {
+                let locations = await healthKitManager.getWorkoutRouteLocations(healthStore: healthStore, workout: workout)
+                workoutLocations[workout] = locations
+            }
+        } else {
+            print("Failed to fetch workouts")
+        }
+        self.workoutLocations = workoutLocations
+        print(workoutLocations)
+    }
+
     func changeAuthorizationStatus() {
         guard let stepQtyType = HKObjectType.quantityType(forIdentifier: .stepCount) else { return }
         let status = self.healthStore.authorizationStatus(for: stepQtyType)
@@ -63,6 +91,19 @@ class HealthKitViewModel: ObservableObject {
             @unknown default:
                 self.isAuthorized = false
             }
+        }
+    }
+
+    func createPolyline(from locations: [CLLocation]) -> MKPolyline {
+        let coordinates = locations.map { $0.coordinate }
+        
+        return MKPolyline(coordinates: coordinates, count: coordinates.count)
+    }
+
+    func addRoutesToMap(for workouts: [HKWorkout: [CLLocation]], on mapView: MKMapView) {
+        for (_, locations) in workouts {
+            let polyline = createPolyline(from: locations)
+            mapView.addOverlay(polyline)
         }
     }
 }

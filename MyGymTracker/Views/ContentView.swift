@@ -15,19 +15,21 @@ struct ContentView: View {
     @State private var showingAddView = false
 
     var body: some View {
-        if vm.isAuthorized {
-
+//        if vm.isAuthorized {
             NavigationView {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Calories consumed: \(Int(totalCaloriesToday())) KCal (Today)")
-                        .foregroundColor(.gray)
-                        .padding(.horizontal)
-                    Text("Calories burned: \(vm.userActiveCaloriesBurned) KCal (Today)")
-                        .foregroundColor(.gray)
-                        .padding(.horizontal)
-                    Text("Calorie Deficit: \((Int(vm.userActiveCaloriesBurned) ?? 0) - Int(totalCaloriesToday())) KCal (Today)")
-                        .foregroundColor(.gray)
-                        .padding(.horizontal)
+                    HStack(alignment: .center, spacing: 5) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text("Calories consumed: \(Int(totalCaloriesToday())) KCal (Today)")
+                                .foregroundColor(.gray)
+                            Text("Calories burned: \(vm.userActiveCaloriesBurned) KCal (Today)")
+                                .foregroundColor(.gray)
+                            Text("Calorie Deficit: \((Int(vm.userActiveCaloriesBurned) ?? 0) - Int(totalCaloriesToday())) KCal (Today)")
+                                .foregroundColor(.gray)
+                        }
+                        Spacer()
+                        StepsView(image: Image(systemName: "figure.walk"))
+                    }
                     List {
                         ForEach(food) {
                             food in
@@ -52,6 +54,7 @@ struct ContentView: View {
                     .listStyle(.plain)
                     .refreshable { }
                 }
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 .navigationTitle("MyGymTracker")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -71,25 +74,28 @@ struct ContentView: View {
                 .onAppear {
                     vm.readStepsTakenToday()
                     vm.readCaloriesBurnedToday()
+//                    Task {
+//                       await vm.readWorkouts()
+//                    }
                 }
             }
-        } else {
-            VStack {
-                Text("Please Authorize Health!")
-                    .font(.title3)
-
-                Button {
-                    vm.healthRequest()
-                } label: {
-                    Text("Authorize HealthKit")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                }
-                .frame(width: 320, height: 55)
-                .background(Color(.orange))
-                .cornerRadius(10)
-            }
-        }
+//        } else {
+//            VStack {
+//                Text("Please Authorize Health!")
+//                    .font(.title3)
+//
+//                Button {
+//                    vm.healthRequest()
+//                } label: {
+//                    Text("Authorize HealthKit")
+//                        .font(.headline)
+//                        .foregroundColor(.white)
+//                }
+//                .frame(width: 320, height: 55)
+//                .background(Color(.orange))
+//                .cornerRadius(10)
+//            }
+//        }
 
     }
 
@@ -118,5 +124,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .environmentObject(HealthKitViewModel())
     }
 }
