@@ -69,7 +69,6 @@ struct GymActivityMapView: View {
 
                 MapMarker(coordinate: location.coordinate)
 
-                self.overlay(content: <#T##() -> View#>)
             }
 //            MapView()
             .frame(height: 500)

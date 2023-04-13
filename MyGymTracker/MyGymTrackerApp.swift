@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MyGymTrackerApp: App {
     @StateObject private var dataController = DataController()
-    
+
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -25,8 +25,13 @@ struct MyGymTrackerApp: App {
                     .tabItem {
                         Label("Map", systemImage: "map")
                     }
+                UserProfileView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.crop.circle")
+                    }
             }
-            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .environment(\.managedObjectContext, dataController.foodContext)
+            .environment(\.exerciseManagedObjectContext, dataController.exerciseContext)
             .environmentObject(HealthKitViewModel())
         }
     }

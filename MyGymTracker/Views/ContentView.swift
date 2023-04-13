@@ -6,71 +6,45 @@
 //
 
 import SwiftUI
+//import AuthenticationServices
 
 struct ContentView: View {
+    @AppStorage("isUserLoggedIn") private var isUserLoggedIn: Bool = false
     @Environment (\.managedObjectContext) var manageObjectContext
     @EnvironmentObject var vm: HealthKitViewModel
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var food: FetchedResults<Food>
+//    @State private var appleAuthorizationResult: Result<ASAuthorization, Error>?
 
     @State private var showingAddView = false
 
     var body: some View {
+
+
 //        if vm.isAuthorized {
+        
             NavigationView {
                 VStack(alignment: .leading, spacing: 5) {
+
                     HStack(alignment: .center, spacing: 5) {
                         VStack(alignment: .leading, spacing: 0) {
                             Text("Calories consumed: \(Int(totalCaloriesToday())) KCal (Today)")
                                 .foregroundColor(.gray)
                             Text("Calories burned: \(vm.userActiveCaloriesBurned) KCal (Today)")
                                 .foregroundColor(.gray)
-                            Text("Calorie Deficit: \((Int(vm.userActiveCaloriesBurned) ?? 0) - Int(totalCaloriesToday())) KCal (Today)")
-                                .foregroundColor(.gray)
+                            let (isInCalorieDeficit, calories) = vm.isInCalorieDefecit(caloriesConsumed: totalCaloriesToday())
+                            Text("\(calories ?? 0) KCal (Today)")
+                                .foregroundColor(isInCalorieDeficit ?? true ? .green : .red)
                         }
                         Spacer()
                         StepsView(image: Image(systemName: "figure.walk"))
                     }
-                    List {
-                        ForEach(food) {
-                            food in
-                            NavigationLink(destination: Text("\(food.calories)")) {
-                                HStack {
-                                    VStack(alignment: .leading, spacing: 6) {
-                                        Text(food.name ?? "Text")
-                                            .bold()
-                                        Text("\(Int(food.calories))") + Text(" calories").foregroundColor(.red)
-                                    }
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
 
-                                    Spacer()
-                                    Text(timeSince(date: food.date ?? Date()))
-                                        .foregroundColor(.gray)
-                                        .italic()
-                                }
+                    HomeCombinedView()
+                        .background(Color(.systemBackground).edgesIgnoringSafeArea(.all))
 
-                            }
-                        }
-                        .onDelete(perform: deleteFood)
-                    }
-                    .listStyle(.plain)
-                    .refreshable { }
                 }
-                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 .navigationTitle("MyGymTracker")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            showingAddView.toggle()
-                        } label: {
-                            Label("Add food", systemImage: "plus.circle")
-                        }
-                    }
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        EditButton()
-                    }
-                }
-                .sheet(isPresented: $showingAddView) {
-                    AddFoodView()
-                }
                 .onAppear {
                     vm.readStepsTakenToday()
                     vm.readCaloriesBurnedToday()
@@ -99,16 +73,6 @@ struct ContentView: View {
 
     }
 
-    private func deleteFood(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { food[$0] }
-                .forEach(manageObjectContext.delete)
-
-            // Saves to our database
-            DataController().save(context: manageObjectContext)
-        }
-    }
-
     private func totalCaloriesToday() -> Double {
         var caloriesToday : Double = 0
         for item in food {
@@ -120,6 +84,12 @@ struct ContentView: View {
         return caloriesToday
     }
 }
+
+
+extension Notification.Name {
+    static let signInWithApple = Notification.Name("signInWithApple")
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
