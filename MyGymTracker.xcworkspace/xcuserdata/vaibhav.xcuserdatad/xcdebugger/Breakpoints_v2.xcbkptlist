@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A00E9432-C8A6-4F7B-840A-7A8076C0F6D0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Model/DataModel/DataController.swift"
@@ -56,19 +56,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B702633F-578D-40C6-997E-41F58C9A0350"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyGymTracker/Views/ExerciseListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "B702633F-578D-40C6-997E-41F58C9A0350 - 716110a7ffe93e1f"
+                  uuid = "B702633F-578D-40C6-997E-41F58C9A0350 - 716110a7ffe93e38"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -78,23 +78,23 @@
                   urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/ExerciseListView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "248">
                </Location>
                <Location
-                  uuid = "B702633F-578D-40C6-997E-41F58C9A0350 - fe70d935648d6982"
+                  uuid = "B702633F-578D-40C6-997E-41F58C9A0350 - e8bcd0df5ae1aea4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.NavigationLink&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.EmptyView&gt;)&gt;&gt;, MyGymTracker.AddFoodView&gt;&gt;, SwiftUI.Group&lt;&lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in MyGymTracker.ExerciseListView.body.getter : some"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Group&lt;SwiftUI.NavigationLink&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.EmptyView&gt;)&gt;&gt;, MyGymTracker.WorkoutSelectionView&gt;&gt;, SwiftUI.Group&lt;&lt;&lt;opaque return type of SwiftUI.DynamicViewContent.onDelete(perform: Swift.Optional&lt;(Foundation.IndexSet) -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in MyGymTracker.ExerciseListView.body.getter : some"
                   moduleName = "MyGymTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/ExerciseListView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
                   offsetFromSymbolStart = "348">
                </Location>
             </Locations>
@@ -104,7 +104,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D4BA98F3-5F33-42C5-A88C-736666E99D3E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyGymTracker/Views/ExerciseListView.swift"
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D0CD5574-962C-4D54-A8EB-5D5B0C8BE893"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyGymTracker/Views/UserProfileView.swift"
@@ -194,6 +194,388 @@
             endingLineNumber = "98"
             landmarkName = "saveUserData()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32B3C938-DA93-4546-8FE2-098EDD8D337F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "655632F9-DA63-45F5-928B-4FF75E4D71C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "655632F9-DA63-45F5-928B-4FF75E4D71C3 - 3102f1bf01fddd25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "655632F9-DA63-45F5-928B-4FF75E4D71C3 - 9a9db566e56e6417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "655632F9-DA63-45F5-928B-4FF75E4D71C3 - 3f58af41119be726"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D567ED53-9202-4F4B-B464-59AD685C0E29"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1AAE8F4-9548-4669-B552-A8985E07049E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/DataModel/DataController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B1AAE8F4-9548-4669-B552-A8985E07049E - edd31c079b0649b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyGymTracker.DataController.init() -&gt; MyGymTracker.DataController"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/Model/DataModel/DataController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "B1AAE8F4-9548-4669-B552-A8985E07049E - 97dbaed0c3a58ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSPersistentStoreDescription, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGymTracker.DataController.init() -&gt; MyGymTracker.DataController"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/Model/DataModel/DataController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE000007-D0E6-4F22-B517-BB3862DAFFC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Model/DataModel/DataController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE000007-D0E6-4F22-B517-BB3862DAFFC2 - edd31c079b0649b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyGymTracker.DataController.init() -&gt; MyGymTracker.DataController"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/Model/DataModel/DataController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "EE000007-D0E6-4F22-B517-BB3862DAFFC2 - 97dbaed0c3a58ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSPersistentStoreDescription, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGymTracker.DataController.init() -&gt; MyGymTracker.DataController"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/Model/DataModel/DataController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06DF704A-4176-4B07-9921-F1F41F01E246"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "06DF704A-4176-4B07-9921-F1F41F01E246 - 4d4593ed45fcc01b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in MyGymTracker.WorkoutSelectionView.body.getter : some"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "06DF704A-4176-4B07-9921-F1F41F01E246 - 26df18394aae5c25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in MyGymTracker.WorkoutSelectionView.body.getter : some"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03BF4E61-7411-4EFC-9756-0BE4BD5DDB79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "03BF4E61-7411-4EFC-9756-0BE4BD5DDB79 - d690fedcd19b7637"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyGymTracker.WorkoutSelectionView.body.getter : some"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "03BF4E61-7411-4EFC-9756-0BE4BD5DDB79 - 4d4593ed45fcc01b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in MyGymTracker.WorkoutSelectionView.body.getter : some"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC49C9B6-FB8E-4B7E-A76D-F422A730BB0D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BC49C9B6-FB8E-4B7E-A76D-F422A730BB0D - 3102f1bf01fddd25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "BC49C9B6-FB8E-4B7E-A76D-F422A730BB0D - 9a9db566e56e6417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "BC49C9B6-FB8E-4B7E-A76D-F422A730BB0D - 3f58af41119be726"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MyGymTracker.WorkoutSelectionViewModel.fetchWorkouts() async -&gt; ()"
+                  moduleName = "MyGymTracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav/Downloads/MyGymTracker/MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65FA857B-BA0D-49B7-B78E-6A42D197A3FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/WorkoutSelection/WorkoutSelectionViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchWorkouts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "037664C2-DD93-4FB0-8CD4-9CB8AD7E1046"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGymTracker/Views/ExerciseListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -5,7 +5,7 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="equipment" optional="YES" attributeType="String"/>
         <attribute name="force" optional="YES" attributeType="String"/>
-        <attribute name="instructions" optional="YES" attributeType="Transformable"/>
+        <attribute name="instructions" optional="YES" attributeType="Transformable" customClassName="[String]"/>
         <attribute name="level" optional="YES" attributeType="String"/>
         <attribute name="mechanic" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>

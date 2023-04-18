@@ -12,7 +12,6 @@ struct StepsView: View {
     @EnvironmentObject var vm: HealthKitViewModel
     let image: Image
 
-//    @State private var currentCount: Double = vm.userStepCount
     private let expectedDailyValue: Double = 1000
     
     private var currentGradient: LinearGradient {

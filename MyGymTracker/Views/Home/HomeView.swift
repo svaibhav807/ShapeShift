@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  MyGymTracker
 //
 //  Created by Vaibhav Singh on 09/01/23.
@@ -8,14 +8,13 @@
 import SwiftUI
 //import AuthenticationServices
 
-struct ContentView: View {
+struct HomeView: View {
     @AppStorage("isUserLoggedIn") private var isUserLoggedIn: Bool = false
     @Environment (\.managedObjectContext) var manageObjectContext
     @EnvironmentObject var vm: HealthKitViewModel
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var food: FetchedResults<Food>
 //    @State private var appleAuthorizationResult: Result<ASAuthorization, Error>?
 
-    @State private var showingAddView = false
 
     var body: some View {
 
@@ -91,9 +90,9 @@ extension Notification.Name {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
         .environmentObject(HealthKitViewModel())
     }
 }

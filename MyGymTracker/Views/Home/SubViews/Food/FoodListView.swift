@@ -13,7 +13,7 @@ struct FoodListView: View {
     @State private var showingAddView = false
     let backgroundColor: Color = Color(.systemGray6)
     let viewBackgroundColor: Color = Color(.systemBackground)
-    
+
     var body: some View {
         List {
             Group {

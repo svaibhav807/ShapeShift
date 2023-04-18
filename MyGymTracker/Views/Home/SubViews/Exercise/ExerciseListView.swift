@@ -11,16 +11,17 @@ struct ExerciseListView: View {
     @Environment(\.exerciseManagedObjectContext) var exerciseContext
     @FetchRequest(entity: CompletedExercise.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \CompletedExercise.date, ascending: false)], animation: .default)
     private var completedExercises: FetchedResults<CompletedExercise>
-    
+    @State private var showingAddView = false
+
     var body: some View {
         List {
             Group {
-                NavigationLink(destination: AddFoodView()) {
+                NavigationLink(destination: WorkoutSelectionView()) {
                     HStack {
                         Text("Add New Item")
                         Spacer()
                         Button {
-//                            showingAddView.toggle()
+                            showingAddView.toggle()
                         } label: {
                         }
                     }
@@ -29,12 +30,15 @@ struct ExerciseListView: View {
             }
             
             Group {
+                
                 ForEach(completedExercises) { exercise in
-                    VStack(alignment: .leading) {
-                        Text(exercise.name ?? "")
-                            .font(.headline)
-                        Text("Completed on: \(exercise.date ?? Date(), formatter: DateFormatter())")
-                            .font(.subheadline)
+                    NavigationLink(destination: ExerciseDetailView(exercise: exercise)) {
+                        VStack(alignment: .leading) {
+                            Text(exercise.name ?? "")
+                                .font(.headline)
+                            Text("Completed on: \(dateFormatter.string(from: exercise.date ?? Date()))")
+                                .font(.subheadline)
+                        }
                     }
                 }
                 .onDelete(perform: deleteExercise)
@@ -48,6 +52,15 @@ struct ExerciseListView: View {
             DataController().save(context: exerciseContext)
         }
     }
+    
+    
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter
+    }()
+
 }
 
 struct ExcerciseListView_Previews: PreviewProvider {

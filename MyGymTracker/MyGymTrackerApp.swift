@@ -14,17 +14,16 @@ struct MyGymTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                // First tab
-                ContentView()
+                HomeView()
                     .tabItem {
                         Label("Tracker", systemImage: "bolt")
                     }
 
-                // Second tab
                 GymActivityView()
                     .tabItem {
                         Label("Map", systemImage: "map")
                     }
+                
                 UserProfileView()
                     .tabItem {
                         Label("Profile", systemImage: "person.crop.circle")

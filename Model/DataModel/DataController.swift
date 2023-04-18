@@ -72,7 +72,7 @@ class DataController: ObservableObject {
                     newExercise.equipment = exercise.equipment
                     newExercise.primaryMuscles = exercise.primaryMuscles as [String]
                     newExercise.secondaryMuscles = exercise.secondaryMuscles as [String]
-                    newExercise.instructions = exercise.instructions as NSObject
+                    newExercise.instructions = exercise.instructions as [String]
                     newExercise.category = exercise.category
                     newExercise.date = Date()
    

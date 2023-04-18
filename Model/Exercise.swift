@@ -8,7 +8,7 @@
 import Foundation
 
 struct Exercise: Codable, Identifiable {
-    var id = UUID()
+    let id = UUID()
     let name: String
     let force: String
     let level: String
